@@ -1,0 +1,10 @@
+<!-- Template for showing image details -->
+<div class="messageBox autoclose">
+    <div class="modal-header">
+        <h3>Details</h3>
+    </div>
+    <div class="modal-body">
+        <img data-bind="attr: { src: 'http://farm' + photo.farm + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg' }"/>
+    	<p data-bind="text: photo.title._content"></p>
+    </div>
+</div>

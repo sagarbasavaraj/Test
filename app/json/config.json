@@ -1,0 +1,17 @@
+{
+	"root":"viewmodels/shell",
+	"transition":"entrance",
+	"flickrTitle":"iGallery",
+	"url":"http://api.flickr.com/services/rest",
+	"appKey":"269eaba370215946df2e368f70cf851b",
+	"page":"1",
+	"per_page":"500",
+	"imagesToShow":"30",
+	"flickrAPI":{
+		"getPublicPhotos":"flickr.people.getPublicPhotos",
+		"getInfo":"flickr.photos.getInfo",
+		"search":"flickr.photos.search"
+		},
+	"user_id":"29096781@N02",
+	"format":"json"
+}
