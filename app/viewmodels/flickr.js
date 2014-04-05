@@ -79,7 +79,7 @@ define([ 'durandal/app', 'knockout', 'services/flickrService',
 				totalImages.splice(0, totalImages.length);
 				totalImages.push(response.photos.photo);
 				self.images(totalImages[0].splice(0, imagesToShow));
-			});
+			},handleError);
 		}
 		/**
 		 * Shows details of selected image.
@@ -93,7 +93,7 @@ define([ 'durandal/app', 'knockout', 'services/flickrService',
 				response.viewUrl = 'views/photoDetail';
 				app.showDialog(response);
 
-			});
+			},handleError);
 		}
 
 		/**
@@ -117,7 +117,7 @@ define([ 'durandal/app', 'knockout', 'services/flickrService',
 										imagesToShow));
 							}
 						}
-					});
+					},handleError);
 		}
 
 		/**
@@ -189,6 +189,11 @@ define([ 'durandal/app', 'knockout', 'services/flickrService',
 			};
 
 			$('#pagination').bootstrapPaginator(options);
+		}
+		
+		function handleError(error){
+			console.log(error);
+			app.showMessage(error,'Error');
 		}
 
 	};
