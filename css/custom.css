@@ -1,0 +1,72 @@
+body{
+	background-color: white;
+}
+.container-custom{
+	overflow-y: scroll;
+	overflow-x:hidden;
+	height:510px;
+	margin-top: 20px;
+}
+.splash {
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.splash .message {
+    font-size: 5em;
+    line-height: 1.5em;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+    text-transform: uppercase;
+}
+
+.splash .icon-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.page-host {
+    position: relative;
+    top: 40px;
+}
+
+
+.navbar-fixed-top .icon-home {
+    font-size: 20px
+}
+
+.loader {
+    margin: 6px 8px 4px 8px;
+    visibility: hidden;
+}
+
+.loader.active {
+    visibility: visible;
+}
+
+.messageBox,.modal-body{
+	width:800px;
+	height:600px;
+	max-height:600px;
+	max-width: 800px;
+	text-align: center;
+}
+.modal-body img{
+	width: 750px; 
+	height: 450px;
+}
+
+#pagination{
+	float:right;
+	cursor:pointer;
+	margin-right: 30px;
+	
+}
+
+#home{
+	cursor:pointer;
+	-webkit-text-decoration: none;
+	-moz-text-decoration: none;
+}
