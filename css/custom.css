@@ -1,12 +1,25 @@
 body{
 	background-color: white;
 }
+
+@media screen and (max-height: 1024px){ 
+.container-custom{
+	overflow-y: scroll;
+	overflow-x:hidden;
+	height:790px;
+	margin-top: 20px;
+}
+}
+
+@media screen and (max-height: 800px){ 
 .container-custom{
 	overflow-y: scroll;
 	overflow-x:hidden;
 	height:510px;
 	margin-top: 20px;
 }
+}
+
 .splash {
     text-align: center;
     margin: 10% 0 0 0;
